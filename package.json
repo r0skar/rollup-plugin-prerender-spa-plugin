@@ -1,0 +1,30 @@
+{
+  "name": "@r0skar/rollup-plugin-spa-prerenderer",
+  "version": "0.0.1",
+  "description": "Rollup integration for the 'prerender-spa-plugin'.",
+  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Oskar Rainer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r0skar/r0skar.git",
+    "directory": "packages/rollup-plugin-spa-prerenderer"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "@prerenderer/prerenderer": "^0.7.2",
+    "@prerenderer/renderer-puppeteer": "^0.2.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "util": "^0.12.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.12.3"
+  },
+  "peerDependencies": {
+    "rollup": "^1.12.3"
+  }
+}
