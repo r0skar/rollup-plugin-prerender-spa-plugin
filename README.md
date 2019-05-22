@@ -1,6 +1,6 @@
 # rollup-plugin-spa-prerenderer
 
-basic rollup plugin to integrate that runs the [spa-prerenderer](https://github.com/chrisvfritz/prerender-spa-plugin) after each build.
+Basic rollup plugin that runs the [spa-prerenderer](https://github.com/chrisvfritz/prerender-spa-plugin) after each build.
 
 ## Installation
 
