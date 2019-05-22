@@ -1,8 +1,12 @@
 {
   "name": "rollup-plugin-spa-prerenderer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rollup integration for the 'prerender-spa-plugin'.",
-  "keywords": ["rollup", "prerenderer", "spa"],
+  "keywords": [
+    "rollup",
+    "prerenderer",
+    "spa"
+  ],
   "types": "index.d.ts",
   "main": "dist/index.js",
   "license": "MIT",
