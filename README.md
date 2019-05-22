@@ -11,11 +11,11 @@ Basic rollup plugin that runs the [spa-prerenderer](https://github.com/chrisvfri
 
 ```js
 // rollup.config.js
-import spaPrerenderer from 'rollup-plugin-prerender-spa-plugin'
+import prerenderSpaPlugin from 'rollup-plugin-prerender-spa-plugin'
 
 export default {
   plugins: [
-    spaPrerenderer({
+    prerenderSpaPlugin({
       // Required - The path to the outputted app to prerender.
       staticDir: path.resolve(__dirname, 'dist'),
 
