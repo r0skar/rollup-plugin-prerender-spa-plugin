@@ -12,7 +12,8 @@
     "directory": "packages/rollup-plugin-spa-prerenderer"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "publish": "yarn build && yarn publish"
   },
   "dependencies": {
     "@prerenderer/prerenderer": "^0.7.2",
