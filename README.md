@@ -1,17 +1,17 @@
-# rollup-plugin-spa-prerenderer
+# rollup-plugin-prerender-spa-plugin
 
 Basic rollup plugin that runs the [spa-prerenderer](https://github.com/chrisvfritz/prerender-spa-plugin) after each build.
 
 ## Installation
 
-`yarn add -D rollup-plugin-spa-prerenderer`
+`yarn add -D rollup-plugin-prerender-spa-plugin`
 
 
 ## Configuration
 
 ```js
 // rollup.config.js
-import spaPrerenderer from 'rollup-plugin-spa-prerenderer'
+import spaPrerenderer from 'rollup-plugin-prerender-spa-plugin'
 
 export default {
   plugins: [

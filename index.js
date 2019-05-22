@@ -33,8 +33,8 @@ const startPrerenderer = async (options) => {
   prerenderer.destroy()
 }
 
-const rollupSpaPrerenderer = (options = {}) => ({
-  name: 'spaPrerenderer',
+const prerenderSpaPlugin = (options = {}) => ({
+  name: 'prerenderSpaPlugin',
   writeBundle: () =>  {
     try {
       startPrerenderer(options)
@@ -44,4 +44,4 @@ const rollupSpaPrerenderer = (options = {}) => ({
   }
 })
 
-export default rollupSpaPrerenderer
+export default prerenderSpaPlugin
