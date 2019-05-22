@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-spa-prerenderer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rollup integration for the 'prerender-spa-plugin'.",
   "types": "index.d.ts",
   "main": "dist/index.js",
@@ -8,11 +8,11 @@
   "author": "Oskar Rainer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/r0skar/rollup-plugin-spa-prerenderer.git",
+    "url": "git+https://github.com/r0skar/rollup-plugin-spa-prerenderer.git"
   },
   "scripts": {
     "build": "rollup -c",
-    "publish": "yarn build && yarn publish"
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@prerenderer/prerenderer": "^0.7.2",
