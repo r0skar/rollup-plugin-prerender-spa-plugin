@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-spa-prerenderer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Rollup integration for the 'prerender-spa-plugin'.",
   "keywords": [
     "rollup",
