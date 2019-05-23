@@ -7,11 +7,24 @@ export interface PrerendererConfig {
   routes: string[]
   indexPath?: string
   renderer?: PuppeteerConfig
+  server?: {
+    port?: number
+    proxy?: object
+  }
 }
 
-interface PuppeteerConfig {
+interface RendererConfig {
+  renderAfterDocumentEvent?: string
+  renderAfterElementExists?: string
+  renderAfterTime?: number
+  maxConcurrentRoutes?: number
+  skipThirdPartyRequests?: boolean
+  consoleHandler?: (route: string, message: string) => void
   injectProperty?: string
   inject?: { [key: string]: unknown }
+}
+
+interface PuppeteerConfig extends RendererConfig {
   ignoreHTTPSErrors?: boolean
   headless?: boolean
   executablePath?: string
