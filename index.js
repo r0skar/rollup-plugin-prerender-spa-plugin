@@ -7,14 +7,14 @@ import Puppeteer from '@prerenderer/renderer-puppeteer'
 const writeFileAsync = promisify(fs.writeFile)
 
 const startPrerenderer = async (options) => {
-  const { routes, puppeteer = {}, ...config } = options
+  const { staticDir, routes, puppeteer = {} } = options
 
-  if (!config.staticDir) throw Error('`staticDir` must be of type `string`')
+  if (!staticDir) throw Error('`staticDir` must be of type `string`')
 
   if (!routes || routes.length === 0) throw Error('`routes` must be of type `string[]`')
 
   const renderer = new Puppeteer(puppeteer)
-  const prerenderer = new Prerenderer({ renderer, ...config })
+  const prerenderer = new Prerenderer({ renderer, staticDir })
 
   await prerenderer.initialize()
   const rendered = await prerenderer.renderRoutes(routes)
