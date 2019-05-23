@@ -2,7 +2,7 @@ export = prerendererPlugin
 
 declare function prerendererPlugin (options?: PrerendererConfig): import('rollup').Plugin
 
-export interface PrerendererConfig {
+interface PrerendererConfig {
   staticDir: string
   routes: string[]
   indexPath?: string
